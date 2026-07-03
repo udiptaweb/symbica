@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Symbica — Technology that feels like you</title>
+  <meta name="description" content="Symbica builds smart bionic hands that create a true sense of ownership — empowering specially-abled people to live confident, self-reliant lives." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/symbica_logo.jpg" />
+</head>
+<body>
+
+  <!-- ambient background -->
+  <div class="ambient" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#top" class="brand">
+        <img class="brand-logo" src="img/symbica_logo.jpg" alt="Symbica" />
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Who we are</a>
+        <a href="#product">The Hand</a>
+        <a href="#vision">Vision</a>
+        <a href="#values">Values</a>
+        <a href="#veer-logs">Veer Logs</a>
+        <a href="#contact" class="btn btn-small btn-outline">Get in touch</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow reveal-hero" style="--d:0">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Building the future of bionics
+        </p>
+        <h1 class="reveal-hero" style="--d:1">
+          Technology that
+          <span class="gradient-text">feels like you.</span>
+        </h1>
+        <p class="lead reveal-hero" style="--d:2">
+          Symbica builds smart bionic hands designed to create a true sense of
+          ownership — so every gesture feels natural, confident and entirely your own.
+        </p>
+        <div class="hero-actions reveal-hero" style="--d:3">
+          <a href="#product" class="btn btn-primary">Discover the hand</a>
+          <a href="#about" class="btn btn-ghost">Our story <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-hero" style="--d:2" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <svg class="bionic-hand" viewBox="0 0 360 420" fill="none">
+          <defs>
+            <linearGradient id="hg" x1="0" y1="420" x2="360" y2="0">
+              <stop stop-color="#4FD1C5"/><stop offset="1" stop-color="#8B7CF6"/>
+            </linearGradient>
+          </defs>
+          <!-- fingers -->
+          <rect class="finger f1" x="70"  y="120" width="34" height="150" rx="17" />
+          <rect class="finger f2" x="118" y="72"  width="34" height="198" rx="17" />
+          <rect class="finger f3" x="166" y="52"  width="34" height="218" rx="17" />
+          <rect class="finger f4" x="214" y="86"  width="34" height="184" rx="17" />
+          <!-- thumb -->
+          <rect class="finger f5" x="238" y="216" width="34" height="120" rx="17" transform="rotate(-40 255 276)" />
+          <!-- palm -->
+          <rect class="palm" x="70" y="252" width="178" height="140" rx="40" />
+          <!-- circuit lines -->
+          <path class="trace" d="M87 190 V 300 M135 150 V 300 M183 130 V 300 M231 165 V 300" stroke-linecap="round"/>
+          <!-- joint nodes -->
+          <circle class="node n1" cx="87"  cy="190" r="6"/>
+          <circle class="node n2" cx="135" cy="150" r="6"/>
+          <circle class="node n3" cx="183" cy="130" r="6"/>
+          <circle class="node n4" cx="231" cy="165" r="6"/>
+          <circle class="node n5" cx="159" cy="322" r="10"/>
+          <circle class="node-ring" cx="159" cy="322" r="20"/>
+        </svg>
+        <div class="pulse-ring r1"></div>
+        <div class="pulse-ring r2"></div>
+        <div class="pulse-ring r3"></div>
+      </div>
+
+      <a href="#about" class="scroll-hint reveal-hero" style="--d:4" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Confidence</span><i>◆</i><span>Self-reliance</span><i>◆</i>
+        <span>Self-esteem</span><i>◆</i><span>Ownership</span><i>◆</i>
+        <span>Comfort</span><i>◆</i><span>Independence</span><i>◆</i>
+        <span>Confidence</span><i>◆</i><span>Self-reliance</span><i>◆</i>
+        <span>Self-esteem</span><i>◆</i><span>Ownership</span><i>◆</i>
+        <span>Comfort</span><i>◆</i><span>Independence</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick"></span>Who we are</p>
+        <h2>Born from a dream of <span class="gradient-text">empowerment.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="big-p">
+            Symbica started with a dream of empowering specially-abled people by
+            bringing them back into mainstream life — where they feel
+            <strong>confident</strong>, <strong>self-reliant</strong> and full of
+            <strong>self-esteem</strong>.
+          </p>
+          <p>
+            We believe assistive technology should never feel like a compromise.
+            It should feel like a part of you — an extension of your intent,
+            your ability and your identity.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="mini-card reveal" style="--d:1">
+            <div class="mini-icon">🤝</div>
+            <h3>Human first</h3>
+            <p>Every decision starts with the person who will wear our technology every single day.</p>
+          </div>
+          <div class="mini-card reveal" style="--d:2">
+            <div class="mini-icon">🧠</div>
+            <h3>Smart by design</h3>
+            <p>Intelligence built in — so the hand adapts to you, not the other way around.</p>
+          </div>
+          <div class="mini-card reveal" style="--d:3">
+            <div class="mini-icon">✨</div>
+            <h3>Dignity in detail</h3>
+            <p>Comfort, aesthetics and experience are treated as essentials, never afterthoughts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT ================= -->
+    <section class="section section-alt" id="product">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="tick"></span>What we're building</p>
+          <h2>A smart bionic hand that <span class="gradient-text">feels like your own.</span></h2>
+          <p class="section-sub">
+            Our current focus: a bionic hand engineered to generate a genuine sense
+            of ownership — comfortable and confident to operate in everyday life.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal" style="--d:0">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.6 13.4 11 3.8a2 2 0 0 0-1.4-.6H4a2 2 0 0 0-2 2v5.6c0 .53.21 1.04.59 1.41l9.6 9.6a2 2 0 0 0 2.82 0l5.6-5.6a2 2 0 0 0 0-2.82z"/>
+                <circle cx="7.5" cy="7.5" r="1.4"/>
+              </svg>
+            </div>
+            <h3>Affordable</h3>
+            <p>Built to last with durable materials and a long battery life — no constantly replacing parts, no running out of power when you need it most.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:1">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.7S6 9.2 6 13.8a6 6 0 0 0 12 0C18 9.2 12 2.7 12 2.7z"/>
+                <path d="M9.5 14.5a2.6 2.6 0 0 0 2 2.4"/>
+              </svg>
+            </div>
+            <h3>Sweatproof</h3>
+            <p>Tested in a variety of conditions to withstand whatever you throw at it. No matter how much you sweat, our bionic hand keeps working for you.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:2">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21a9 9 0 1 1 9-9c0 2.2-1.8 3-3.4 3H15a2.5 2.5 0 0 0-1.8 4.2c.4.45.13 1.8-1.2 1.8z"/>
+                <circle cx="7.8" cy="11" r="1.2"/><circle cx="11" cy="7.2" r="1.2"/><circle cx="15.8" cy="8.4" r="1.2"/>
+              </svg>
+            </div>
+            <h3>Custom Skin</h3>
+            <p>Everyone's skin is unique. Choose from a range of options — a tone that matches your natural color, or a bright, vibrant color that stands out.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:3">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 11V6.5a1.5 1.5 0 0 0-3 0V5a1.5 1.5 0 0 0-3 0v-.5a1.5 1.5 0 0 0-3 0V11l-1.9-1.9a1.6 1.6 0 0 0-2.3 2.2l4.3 5.9A5 5 0 0 0 13.1 19H14a4 4 0 0 0 4-4z"/>
+              </svg>
+            </div>
+            <h3>5 Finger Motion</h3>
+            <p>Precise and responsive five-finger motion keeps you confident and in control of every movement — complete tasks with ease, like a natural hand.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:4">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="7" width="10" height="10" rx="2.5"/>
+                <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>
+              </svg>
+            </div>
+            <h3>Smart Auto Grasp</h3>
+            <p>Senses the shape and size of objects and adjusts the grip for you — from pencils to water bottles. It's like your own hand, only smarter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISION ================= -->
+    <section class="section vision" id="vision">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="tick"></span>Our vision</p>
+        <blockquote class="vision-quote reveal">
+          “We envision giving users a <span class="gradient-text">comfortable and confident</span>
+          experience while operating the hand in their day-to-day life.”
+        </blockquote>
+        <p class="vision-sub reveal">— The Symbica team</p>
+      </div>
+    </section>
+
+    <!-- ================= VALUES ================= -->
+    <section class="section container" id="values">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick"></span>What drives us</p>
+        <h2>Three promises we <span class="gradient-text">design around.</span></h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal" style="--d:0">
+          <span class="value-num">01</span>
+          <h3>Confidence</h3>
+          <p>Technology should make you stand taller. We build for the moments that matter — a handshake, a meal, a first day at work.</p>
+        </div>
+        <div class="value-card reveal" style="--d:1">
+          <span class="value-num">02</span>
+          <h3>Self-reliance</h3>
+          <p>Independence in everyday tasks is freedom. Our hand is built to give it back, one confident interaction at a time.</p>
+        </div>
+        <div class="value-card reveal" style="--d:2">
+          <span class="value-num">03</span>
+          <h3>Self-esteem</h3>
+          <p>Feeling whole isn't a feature — it's the goal. Everything we make is in service of dignity and belonging.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VEER LOGS (TESTIMONIALS) ================= -->
+    <section class="section section-alt" id="veer-logs">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="tick"></span>Veer Logs</p>
+          <h2>Hear from those who have <span class="gradient-text">triumphed</span> with Symbica prosthetic arms.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <figure class="testimonial-card reveal" style="--d:0">
+            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote>I no longer hesitate to use my hand in public.</blockquote>
+            <figcaption>
+              <img src="img/basanta_deka.jpg" alt="Basanta Deka" loading="lazy" />
+              <div>
+                <span class="t-name">Basanta Deka</span>
+                <span class="t-place">Guwahati, Assam</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card reveal" style="--d:1">
+            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote>Operating an artificial hand has become much more easier.</blockquote>
+            <figcaption>
+              <img src="img/sanatan_bania.jpg" alt="Sanatan Bania" loading="lazy" />
+              <div>
+                <span class="t-name">Sanatan Bania</span>
+                <span class="t-place">Guwahati, Assam</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUPPORTED BY ================= -->
+    <section class="section container" id="supporters">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick"></span>Supported By</p>
+        <h2>Backed by the best <span class="gradient-text">in the industry.</span></h2>
+      </div>
+      <div class="sponsor-grid">
+        <figure class="sponsor-card reveal" style="--d:0">
+          <div class="sponsor-logo">
+            <img src="img/sponsors/1200px-IIT_Guwahati_Logo_edited-150x150.jpg" alt="IIT Guwahati logo" loading="lazy" />
+          </div>
+          <figcaption>IIT Guwahati</figcaption>
+        </figure>
+        <figure class="sponsor-card reveal" style="--d:1">
+          <div class="sponsor-logo">
+            <img src="img/sponsors/birac-logo-150x150.jpg" alt="BIRAC logo" loading="lazy" />
+          </div>
+          <figcaption>BIRAC</figcaption>
+        </figure>
+        <figure class="sponsor-card reveal" style="--d:2">
+          <div class="sponsor-logo">
+            <img src="img/sponsors/IIMCIP_edited-150x150.jpg" alt="IIM Calcutta Innovation Park logo" loading="lazy" />
+          </div>
+          <figcaption>IIM Calcutta Innovation Park</figcaption>
+        </figure>
+        <figure class="sponsor-card reveal" style="--d:3">
+          <div class="sponsor-logo">
+            <img src="img/sponsors/Logo-500x-150x150.jpg" alt="KIIT Technology Business Incubator logo" loading="lazy" />
+          </div>
+          <figcaption>KIIT-TBI</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= CTA / CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <h2>Don't let a disability <span class="gradient-text">hold you back.</span></h2>
+          <p>
+            Upgrade to our smart bionic hand with Smart Auto Grasp technology today
+            and experience a new level of comfort and confidence in your day-to-day life.
+          </p>
+          <a class="btn btn-primary btn-large" href="mailto:symbica20@gmail.com">Get in touch</a>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal" style="--d:0">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.25a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2z"/>
+              </svg>
+            </div>
+            <h3>Phone</h3>
+            <a href="tel:+918473891852">+91-8473891852</a>
+          </div>
+
+          <div class="contact-card reveal" style="--d:1">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/>
+              </svg>
+            </div>
+            <h3>Email</h3>
+            <a href="mailto:symbica20@gmail.com">symbica20@gmail.com</a>
+          </div>
+
+          <div class="contact-card contact-card-wide reveal" style="--d:2">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3>Address</h3>
+            <p>Research Park, IIT Guwahati, 4th Floor, Guwahati&#8209;781039, Assam, India</p>
+            <p>BioNEST NIPER, Changsari, 2nd Floor, Guwahati&#8209;781011, Assam, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="footer-brand">
+        <img src="img/symbica_logo.jpg" alt="Symbica logo" loading="lazy" />
+      </a>
+      <p class="footer-tag">Technology that feels like you.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/Symbica/" target="_blank" rel="noopener" aria-label="Symbica on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.87.24-1.46 1.49-1.46h1.4V5c-.28-.04-1.2-.12-2.28-.12-2.26 0-3.8 1.38-3.8 3.9V11H8v3h2.29v7h3.21z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/symbica-private-limited" target="_blank" rel="noopener" aria-label="Symbica on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.94 8.5H3.56V20.4h3.38V8.5zM5.25 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM20.5 13.13c0-3.26-1.74-4.78-4.06-4.78-1.87 0-2.71 1.03-3.18 1.75V8.5H9.88c.04.95 0 11.9 0 11.9h3.38v-6.65c0-.35.03-.7.13-.96.29-.7.94-1.43 2.03-1.43 1.43 0 2 1.1 2 2.7v6.34h3.38v-6.72z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Symbica. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
