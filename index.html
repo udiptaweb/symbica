@@ -24,7 +24,7 @@
   <header class="nav" id="nav">
     <div class="nav-inner container">
       <a href="#top" class="brand">
-        <img class="brand-logo" src="img/symbica_logo.jpg" alt="Symbica" />
+        <img class="brand-logo" src="img/logo.png" alt="Symbica" />
       </a>
 
       <nav class="nav-links" id="navLinks">
@@ -68,31 +68,19 @@
       <div class="hero-visual reveal-hero" style="--d:2" aria-hidden="true">
         <div class="orbit orbit-1"></div>
         <div class="orbit orbit-2"></div>
-        <svg class="bionic-hand" viewBox="0 0 360 420" fill="none">
-          <defs>
-            <linearGradient id="hg" x1="0" y1="420" x2="360" y2="0">
-              <stop stop-color="#4FD1C5"/><stop offset="1" stop-color="#8B7CF6"/>
-            </linearGradient>
-          </defs>
-          <!-- fingers -->
-          <rect class="finger f1" x="70"  y="120" width="34" height="150" rx="17" />
-          <rect class="finger f2" x="118" y="72"  width="34" height="198" rx="17" />
-          <rect class="finger f3" x="166" y="52"  width="34" height="218" rx="17" />
-          <rect class="finger f4" x="214" y="86"  width="34" height="184" rx="17" />
-          <!-- thumb -->
-          <rect class="finger f5" x="238" y="216" width="34" height="120" rx="17" transform="rotate(-40 255 276)" />
-          <!-- palm -->
-          <rect class="palm" x="70" y="252" width="178" height="140" rx="40" />
-          <!-- circuit lines -->
-          <path class="trace" d="M87 190 V 300 M135 150 V 300 M183 130 V 300 M231 165 V 300" stroke-linecap="round"/>
-          <!-- joint nodes -->
-          <circle class="node n1" cx="87"  cy="190" r="6"/>
-          <circle class="node n2" cx="135" cy="150" r="6"/>
-          <circle class="node n3" cx="183" cy="130" r="6"/>
-          <circle class="node n4" cx="231" cy="165" r="6"/>
-          <circle class="node n5" cx="159" cy="322" r="10"/>
-          <circle class="node-ring" cx="159" cy="322" r="20"/>
-        </svg>
+        <div class="hand-scene">
+          <div class="spotlight"></div>
+          <div class="hand-rig" role="img" aria-label="Symbica smart bionic hand closing and opening its fingers">
+            <img class="hl hl-base" src="img/hand_hero.png" alt="" />
+            <div class="h-prox">
+              <img class="hl hl-prox" src="img/hand_hero.png" alt="" />
+              <div class="h-dist">
+                <img class="hl hl-dist" src="img/hand_hero.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="floor-glow"></div>
+        </div>
         <div class="pulse-ring r1"></div>
         <div class="pulse-ring r2"></div>
         <div class="pulse-ring r3"></div>
@@ -298,6 +286,40 @@
       </div>
     </section>
 
+    <!-- ================= GALLERY ================= -->
+    <section class="section container" id="gallery">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick"></span>Our journey</p>
+        <h2>Moments that <span class="gradient-text">move us forward.</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item g-tall reveal" style="--d:0">
+          <img src="img/1.png" alt="Prosthetic hand with lifelike custom skin mounted on a test rig" loading="lazy" />
+          <figcaption>Lifelike custom skin in development</figcaption>
+        </figure>
+        <figure class="gallery-item g-wide reveal" style="--d:1">
+          <img src="img/7.jpeg" alt="A user performing grasp tests with the Symbica prosthetic hand" loading="lazy" />
+          <figcaption>Grasp trials with our users</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="--d:2">
+          <img src="img/4.png" alt="Engineer inspecting circuit board under a digital microscope" loading="lazy" />
+          <figcaption>Electronics, built and tested in-house</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="--d:3">
+          <img src="img/3.jpeg" alt="3D render of the Symbica bionic hand" loading="lazy" />
+          <figcaption>Engineered from the ground up</figcaption>
+        </figure>
+        <figure class="gallery-item g-wide reveal" style="--d:2">
+          <img src="img/5.jpeg" alt="The Symbica team with partners at the BioNEST exhibition stand" loading="lazy" />
+          <figcaption>Exhibiting with our incubation partners</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="--d:3">
+          <img src="img/6.jpeg" alt="Visitors gathered around a Symbica product demonstration" loading="lazy" />
+          <figcaption>Demonstrating the hand to the world</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <!-- ================= SUPPORTED BY ================= -->
     <section class="section container" id="supporters">
       <div class="section-head reveal">
@@ -385,7 +407,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a href="#top" class="footer-brand">
-        <img src="img/symbica_logo.jpg" alt="Symbica logo" loading="lazy" />
+        <img src="img/logo.png" alt="Symbica logo" loading="lazy" />
       </a>
       <p class="footer-tag">Technology that feels like you.</p>
       <div class="socials">
