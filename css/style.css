@@ -251,14 +251,14 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   filter: drop-shadow(0 0 34px rgba(47, 157, 240, 0.3));
   animation:
     hand-glow 6s ease-in-out infinite,
-    hand-zoom 6s ease-in-out infinite;
+    hand-zoom 12s ease-in-out infinite;
   /* faded floor reflection (Chromium/WebKit) */
   -webkit-box-reflect: below 5px linear-gradient(transparent 62%, rgba(0, 0, 0, 0.3));
 }
 /* gentle zoom breathing */
 @keyframes hand-zoom {
   0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.09); }
+  50%      { transform: scale(1.045); }
 }
 @keyframes hand-glow {
   0%, 100% { filter: drop-shadow(0 0 30px rgba(47, 157, 240, 0.25)); }
