@@ -1,0 +1,191 @@
+/* ============================================================
+   Engineering Lab — page theme
+   Deep royal-blue accent, technical "blueprint" design language.
+   Loaded after style.css; everything scoped under .eng-page.
+   ============================================================ */
+
+.eng-page {
+  --bg: #090f1e;
+  --bg-alt: #0b1226;
+  --surface: #0f1830;
+  --surface-2: #15203d;
+  --border: rgba(124, 156, 255, 0.14);
+  --accent: #4a7dff;
+  --accent-2: #7c9cff;
+  --gradient: linear-gradient(120deg, #7c9cff, #2249d4);
+  --radius: 10px;
+}
+
+/* ambient: deep blue blobs + denser blueprint grid */
+.eng-page .blob-a { background: #2b55e8; opacity: 0.14; }
+.eng-page .blob-b { background: #1a2f86; opacity: 0.18; }
+.eng-page .grid-overlay {
+  background-image:
+    linear-gradient(rgba(124, 156, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 156, 255, 0.05) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 35%, transparent 80%);
+}
+
+/* squared, technical buttons */
+.eng-page .btn { border-radius: 10px; }
+.eng-page .btn-primary {
+  color: #eaf0ff;
+  box-shadow: 0 8px 30px rgba(43, 85, 232, 0.35);
+}
+.eng-page .btn-primary:hover { box-shadow: 0 14px 42px rgba(43, 85, 232, 0.5); }
+
+/* code-style section labels: “// label” instead of the tick */
+.eng-page .eyebrow {
+  font-family: Consolas, "SF Mono", "Roboto Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+}
+.eng-page .eyebrow .tick,
+.eng-page .eyebrow .pulse-dot { display: none; }
+.eng-page .eyebrow::before {
+  content: "//";
+  font-weight: 700;
+  color: var(--accent-2);
+}
+
+/* ---------- page hero ---------- */
+.eng-page .page-hero {
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.eng-page .page-hero::after {  /* measurement ruler along the bottom */
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: -1px;
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(124, 156, 255, 0.35) 0 1px,
+    transparent 1px 40px
+  );
+  mask-image: linear-gradient(to right, black, transparent 85%);
+}
+
+/* ---------- capabilities: flat spec-sheet tiles ---------- */
+.eng-page .cap-grid { gap: 2.4rem 2rem; }
+.eng-page .feature-card {
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  padding: 1.6rem 0 0;
+  overflow: visible;
+}
+.eng-page .feature-card::before { display: none; }  /* no cursor spotlight */
+.eng-page .feature-card:hover {
+  transform: none;
+  border-top-color: var(--accent);
+}
+.eng-page .feature-card:hover h3 { color: var(--accent-2); }
+.eng-page .feature-card h3 { transition: color 0.3s; }
+.eng-page .feature-card .feature-icon {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--accent-2);
+  width: 46px; height: 46px;
+  margin-bottom: 1.1rem;
+}
+
+/* ---------- process: vertical timeline ---------- */
+.eng-page .process-flow {
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 620px;
+  position: relative;
+  padding-left: 0;
+}
+.eng-page .process-flow::before {  /* rail */
+  content: "";
+  position: absolute; left: 11px; top: 8px; bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, #7c9cff, #2249d4);
+  opacity: 0.45;
+}
+.eng-page .process-flow li {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.95rem 0 0.95rem 3rem;
+  position: relative;
+  font-size: 1.12rem;
+}
+.eng-page .process-flow li::before {  /* node */
+  content: "";
+  position: absolute; left: 4px; top: 50%;
+  translate: 0 -50%;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-2);
+  background: var(--bg);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.eng-page .process-flow li:hover { transform: none; }
+.eng-page .process-flow li:hover::before {
+  background: var(--accent);
+  box-shadow: 0 0 14px rgba(74, 125, 255, 0.7);
+}
+.eng-page .process-flow li:not(:last-child)::after { display: none; }
+.eng-page .step-num {
+  display: inline;
+  font-family: Consolas, "SF Mono", "Roboto Mono", monospace;
+  margin-right: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* ---------- competencies: flat bordered panels, square markers ---------- */
+.eng-page .comp-card {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  position: relative;
+}
+.eng-page .comp-card::before {  /* corner accent */
+  content: "";
+  position: absolute; top: -1px; left: -1px;
+  width: 26px; height: 26px;
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid var(--accent);
+  border-top-left-radius: 10px;
+  transition: width 0.35s var(--ease), height 0.35s var(--ease);
+}
+.eng-page .comp-card:hover { transform: none; border-color: rgba(124, 156, 255, 0.35); }
+.eng-page .comp-card:hover::before { width: 100%; height: 100%; border-top-right-radius: 10px; border-bottom-left-radius: 10px; }
+.eng-page .comp-card h3 {
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.eng-page .comp-card li::before {
+  width: 5px; height: 5px;
+  top: 0.5em;
+  border-radius: 1px;
+  background: var(--accent-2);
+}
+
+/* ---------- chips: squared tags ---------- */
+.eng-page .chip {
+  border-radius: 8px;
+  border-color: rgba(124, 156, 255, 0.3);
+  font-family: Consolas, "SF Mono", "Roboto Mono", monospace;
+  font-size: 0.86rem;
+}
+.eng-page .chip::before {
+  width: 6px; height: 6px;
+  border-radius: 1px;
+}
+.eng-page .chip:hover { background: rgba(43, 85, 232, 0.12); }
+.eng-page .chip-solid { background: var(--surface); }
+
+/* ---------- CTA ---------- */
+.eng-page .cta-card { border-radius: 14px; }
+.eng-page .cta-glow {
+  background:
+    radial-gradient(circle at 25% 20%, rgba(74, 125, 255, 0.16), transparent 45%),
+    radial-gradient(circle at 80% 85%, rgba(34, 73, 212, 0.2), transparent 45%);
+}
