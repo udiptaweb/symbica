@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Lab — Symbica</title>
+  <meta name="description" content="Symbica's Engineering Lab — where mechanics, electronics, embedded intelligence and human-centered thinking become reliable, manufacturable products." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+
+  <!-- ambient background -->
+  <div class="ambient" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="index.html" class="brand">
+        <img class="brand-logo" src="img/logo.png" alt="Symbica" />
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#about">Who we are</a>
+        <a href="index.html#product">The Hand</a>
+        <a href="engineering.html" class="nav-active">Engineering Lab</a>
+        <a href="index.html#veer-logs">Veer Logs</a>
+        <a href="index.html#contact" class="btn btn-small btn-outline">Get in touch</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero container">
+      <p class="eyebrow reveal-hero" style="--d:0">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        Engineering Lab
+      </p>
+      <h1 class="reveal-hero" style="--d:1">
+        Where ideas become<br /><span class="gradient-text">intelligent products.</span>
+      </h1>
+      <p class="lead reveal-hero" style="--d:2">
+        At Symbica, engineering is more than design — it's the seamless integration
+        of mechanics, electronics, embedded intelligence, and human-centered thinking.
+        We transform ideas into reliable, manufacturable products that address
+        real-world challenges across healthcare, industrial automation, and
+        intelligent systems.
+      </p>
+      <div class="hero-actions reveal-hero" style="--d:3">
+        <a href="#capabilities" class="btn btn-primary">Explore our capabilities</a>
+        <a href="mailto:symbica20@gmail.com?subject=Project%20enquiry" class="btn btn-ghost">Discuss a project <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- ================= CAPABILITIES ================= -->
+    <section class="section section-alt" id="capabilities">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="tick"></span>Engineering capabilities</p>
+          <h2>Six disciplines, <span class="gradient-text">one lab.</span></h2>
+        </div>
+
+        <div class="feature-grid cap-grid">
+          <article class="feature-card reveal" style="--d:0">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/><path d="M8 12h2l1.5-3 2 5L15 12h1.5"/>
+              </svg>
+            </div>
+            <h3>Medical Technologies</h3>
+            <p>Intelligent medical devices, prosthetic systems, rehabilitation technologies, wearable healthcare solutions, and assistive products engineered to improve human capability and quality of life.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:1">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>
+              </svg>
+            </div>
+            <h3>Embedded Intelligence</h3>
+            <p>Reliable embedded platforms with real-time control, low-power operation, wireless connectivity, and seamless hardware-software integration.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:2">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+              </svg>
+            </div>
+            <h3>Electronics Engineering</h3>
+            <p>Robust electronic systems encompassing power management, sensor interfaces, analog and digital circuit design, signal conditioning, communication architectures, and high-reliability hardware.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:3">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </div>
+            <h3>Mechanical Systems</h3>
+            <p>Precision mechanisms, lightweight structures, ergonomic enclosures, custom assemblies, and products optimized for performance, manufacturability, and long-term reliability.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:4">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12h4l3-8 4 16 3-8h6"/>
+              </svg>
+            </div>
+            <h3>Intelligent Sensing</h3>
+            <p>Advanced sensing solutions for force, pressure, motion, position, environmental monitoring, and human-machine interaction.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:5">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="2.5"/><circle cx="4.5" cy="6" r="2"/><circle cx="19.5" cy="6" r="2"/><circle cx="4.5" cy="18" r="2"/><circle cx="19.5" cy="18" r="2"/><path d="M10 11 6 7.2M14 11l4-3.8M10 13l-4 3.8M14 13l4 3.8"/>
+              </svg>
+            </div>
+            <h3>Connected Systems</h3>
+            <p>Intelligent products capable of secure communication, real-time monitoring, edge processing, and seamless integration into connected ecosystems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="section container" id="process">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick"></span>Engineering process</p>
+        <h2>From first idea to <span class="gradient-text">factory floor.</span></h2>
+      </div>
+      <ol class="process-flow">
+        <li class="reveal" style="--d:0"><span class="step-num">01</span>Research &amp; Discovery</li>
+        <li class="reveal" style="--d:1"><span class="step-num">02</span>System Architecture</li>
+        <li class="reveal" style="--d:2"><span class="step-num">03</span>Engineering Design</li>
+        <li class="reveal" style="--d:3"><span class="step-num">04</span>Rapid Prototyping</li>
+        <li class="reveal" style="--d:4"><span class="step-num">05</span>Testing &amp; Validation</li>
+        <li class="reveal" style="--d:5"><span class="step-num">06</span>Manufacturing Readiness</li>
+      </ol>
+    </section>
+
+    <!-- ================= COMPETENCIES ================= -->
+    <section class="section section-alt" id="competencies">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="tick"></span>Core competencies</p>
+          <h2>Deep skills across <span class="gradient-text">the whole stack.</span></h2>
+        </div>
+
+        <div class="comp-grid">
+          <div class="comp-card reveal" style="--d:0">
+            <h3>Embedded Systems</h3>
+            <ul>
+              <li>Bare-metal Firmware</li>
+              <li>Real-Time Control</li>
+              <li>Low-Power Design</li>
+              <li>Communication Protocols</li>
+              <li>Peripheral Integration</li>
+            </ul>
+          </div>
+          <div class="comp-card reveal" style="--d:1">
+            <h3>Electronics</h3>
+            <ul>
+              <li>Analog &amp; Digital Circuit Design</li>
+              <li>Power Electronics</li>
+              <li>Sensor Interfaces</li>
+              <li>Signal Conditioning</li>
+              <li>High-Reliability Hardware</li>
+            </ul>
+          </div>
+          <div class="comp-card reveal" style="--d:2">
+            <h3>Mechanical Engineering</h3>
+            <ul>
+              <li>Precision Mechanisms</li>
+              <li>Product Architecture</li>
+              <li>Ergonomic Design</li>
+              <li>Rapid Prototyping</li>
+              <li>Design for Manufacturing</li>
+            </ul>
+          </div>
+          <div class="comp-card reveal" style="--d:3">
+            <h3>Connectivity</h3>
+            <ul>
+              <li>Bluetooth Low Energy</li>
+              <li>Wi-Fi</li>
+              <li>USB</li>
+              <li>CAN</li>
+              <li>Ethernet</li>
+              <li>Industrial Communication</li>
+            </ul>
+          </div>
+          <div class="comp-card reveal" style="--d:4">
+            <h3>Human–Machine Interfaces</h3>
+            <ul>
+              <li>Motion Sensing</li>
+              <li>Gesture Recognition</li>
+              <li>Force Feedback</li>
+              <li>Wearable Interfaces</li>
+              <li>Adaptive Control</li>
+            </ul>
+          </div>
+          <div class="comp-card reveal" style="--d:5">
+            <h3>Product Development</h3>
+            <ul>
+              <li>Concept Development</li>
+              <li>Feasibility Analysis</li>
+              <li>Prototype Engineering</li>
+              <li>Product Validation</li>
+              <li>Production Transition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESEARCH FOCUS ================= -->
+    <section class="section container" id="research">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="tick"></span>Research focus</p>
+        <h2>What we're <span class="gradient-text">exploring next.</span></h2>
+      </div>
+      <div class="chip-grid reveal">
+        <span class="chip">Advanced Prosthetic Technologies</span>
+        <span class="chip">Human–Machine Interfaces</span>
+        <span class="chip">Intelligent Sensing Systems</span>
+        <span class="chip">Rehabilitation Engineering</span>
+        <span class="chip">Wearable Electronics</span>
+        <span class="chip">Industrial Monitoring Solutions</span>
+        <span class="chip">Embedded Intelligence</span>
+        <span class="chip">Precision Electromechanical Systems</span>
+        <span class="chip">Low-Power Product Development</span>
+        <span class="chip">Next-Generation Assistive Technologies</span>
+      </div>
+    </section>
+
+    <!-- ================= INDUSTRIES ================= -->
+    <section class="section section-alt" id="industries">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="tick"></span>Industries we serve</p>
+          <h2>Built for <span class="gradient-text">real-world impact.</span></h2>
+        </div>
+        <div class="chip-grid reveal">
+          <span class="chip chip-solid">Medical Devices</span>
+          <span class="chip chip-solid">Healthcare Technology</span>
+          <span class="chip chip-solid">Rehabilitation Engineering</span>
+          <span class="chip chip-solid">Industrial Automation</span>
+          <span class="chip chip-solid">Smart Sensing</span>
+          <span class="chip chip-solid">Robotics</span>
+          <span class="chip chip-solid">IoT</span>
+          <span class="chip chip-solid">Research &amp; Scientific Instrumentation</span>
+          <span class="chip chip-solid">Consumer Electronics</span>
+          <span class="chip chip-solid">Assistive Technologies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CLOSING CTA ================= -->
+    <section class="section container">
+      <div class="cta-card reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2>Engineering <span class="gradient-text">the future.</span></h2>
+        <p>
+          From breakthrough medical technologies to intelligent industrial systems,
+          Symbica combines multidisciplinary engineering with purposeful innovation
+          to create products that are reliable, scalable, and built for real-world impact.
+        </p>
+        <a class="btn btn-primary btn-large" href="mailto:symbica20@gmail.com?subject=Innovation%20journey">Start your innovation journey</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer-brand">
+        <img src="img/logo.png" alt="Symbica logo" loading="lazy" />
+      </a>
+      <p class="footer-tag">Technology that feels like you.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/Symbica/" target="_blank" rel="noopener" aria-label="Symbica on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.87.24-1.46 1.49-1.46h1.4V5c-.28-.04-1.2-.12-2.28-.12-2.26 0-3.8 1.38-3.8 3.9V11H8v3h2.29v7h3.21z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/symbica-private-limited" target="_blank" rel="noopener" aria-label="Symbica on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.94 8.5H3.56V20.4h3.38V8.5zM5.25 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM20.5 13.13c0-3.26-1.74-4.78-4.06-4.78-1.87 0-2.71 1.03-3.18 1.75V8.5H9.88c.04.95 0 11.9 0 11.9h3.38v-6.65c0-.35.03-.7.13-.96.29-.7.94-1.43 2.03-1.43 1.43 0 2 1.1 2 2.7v6.34h3.38v-6.72z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Symbica. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
