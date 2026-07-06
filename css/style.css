@@ -255,9 +255,9 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   /* faded floor reflection (Chromium/WebKit) */
   -webkit-box-reflect: below 5px linear-gradient(transparent 62%, rgba(0, 0, 0, 0.3));
 }
-/* product nameplate centered over the hand */
+/* product nameplate at the base of the hand */
 .hand-nameplate {
-  position: absolute; bottom: 200px; left: 50%;
+  position: absolute; bottom: -16px; left: 50%;
   translate: -50% 0;
   width: max-content;
   z-index: 3;
@@ -698,6 +698,50 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .contact-card a:hover { color: var(--accent); }
 .contact-card p { color: var(--text-dim); font-size: 0.94rem; margin-top: 0.5rem; }
 
+/* ---------- forms (Netlify) ---------- */
+.site-form h3 { margin-bottom: 1.4rem; }
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+.form-grid label {
+  display: grid;
+  gap: 0.45rem;
+  font-family: var(--font-head);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+.form-grid .full { grid-column: 1 / -1; }
+.form-grid input,
+.form-grid textarea {
+  width: 100%;
+  padding: 0.85rem 1.05rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.form-grid textarea { resize: vertical; min-height: 120px; }
+.form-grid input::placeholder,
+.form-grid textarea::placeholder { color: rgba(186, 198, 216, 0.45); }
+.form-grid input:focus,
+.form-grid textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(47, 157, 240, 0.16);
+}
+.site-form button[type="submit"] { margin-top: 1.4rem; }
+.hp-field { display: none; }
+
+@media (max-width: 560px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- footer ---------- */
 .footer {
   border-top: 1px solid var(--border);
@@ -874,19 +918,32 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   .contact-grid { grid-template-columns: 1fr; }
 
   .nav-toggle { display: flex; }
+  /* dropdown panel under the bar (fixed fullscreen breaks once the nav
+     gains backdrop-filter, which becomes its containing block) */
   .nav-links {
-    position: fixed; inset: 0;
-    flex-direction: column; justify-content: center;
-    gap: 2.2rem;
-    background: rgba(19, 28, 43, 0.96);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    position: absolute; top: 100%; left: 0; right: 0;
+    z-index: 60;
+    flex-direction: column; align-items: center;
+    gap: 0;
+    padding: 0.5rem 0 1.3rem;
+    background: #101826;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 24px 40px rgba(3, 8, 16, 0.5);
     opacity: 0; pointer-events: none;
-    transition: opacity 0.35s var(--ease);
-    z-index: -1;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.35s var(--ease);
   }
-  .nav-links.open { opacity: 1; pointer-events: auto; }
-  .nav-links a:not(.btn) { font-size: 1.3rem; }
+  .nav-links.open { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .nav-links a:not(.btn) {
+    font-size: 1.05rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 0;
+  }
+  .nav-links a:not(.btn)::after { display: none; }
+  .nav-links .btn { margin-top: 0.8rem; }
+  /* solid bar while the menu is open, even before scrolling */
+  .nav.menu-open { background: rgba(16, 24, 38, 0.98); }
 }
 
 @media (max-width: 520px) {

@@ -34,7 +34,7 @@
         <a href="#values">Values</a>
         <a href="#veer-logs">Veer Logs</a>
         <a href="engineering.html">Engineering Lab</a>
-        <a href="#contact" class="btn btn-small btn-outline">Get in touch</a>
+        <a href="#send-message" class="btn btn-small btn-outline">Get in touch</a>
       </nav>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -402,7 +402,7 @@
             Upgrade to our smart bionic hand with Smart Auto Grasp technology today
             and experience a new level of comfort and confidence in your day-to-day life.
           </p>
-          <a class="btn btn-primary btn-large" href="mailto:symbica20@gmail.com">Get in touch</a>
+          <a class="btn btn-primary btn-large" href="#send-message">Get in touch</a>
         </div>
 
         <div class="contact-grid">
@@ -423,7 +423,7 @@
               </svg>
             </div>
             <h3>Email</h3>
-            <a href="mailto:symbica20@gmail.com">symbica20@gmail.com</a>
+            <a href="mailto:info@symbica.in">info@symbica.in</a>
           </div>
 
           <div class="contact-card contact-card-wide reveal" style="--d:2">
@@ -433,9 +433,43 @@
               </svg>
             </div>
             <h3>Address</h3>
-            <p>Research Park, IIT Guwahati, 4th Floor, Guwahati&#8209;781039, Assam, India</p>
-            <p>BioNEST NIPER, Changsari, 2nd Floor, Guwahati&#8209;781011, Assam, India</p>
+            <p>Research Park, IIT Guwahati, 2nd Floor, Guwahati&#8209;781039, Assam, India</p>
           </div>
+
+          <form
+            id="send-message"
+            class="contact-card contact-card-wide site-form reveal"
+            style="--d:3"
+            name="get-in-touch"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="get-in-touch" />
+            <p class="hp-field">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <h3>Send us a message</h3>
+            <div class="form-grid">
+              <label>
+                Name
+                <input type="text" name="name" required placeholder="Your full name" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" required placeholder="you@example.com" />
+              </label>
+              <label class="full">
+                Phone <span aria-hidden="true">(optional)</span>
+                <input type="tel" name="phone" placeholder="+91" />
+              </label>
+              <label class="full">
+                Message
+                <textarea name="message" required placeholder="How can we help you?"></textarea>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
         </div>
       </div>
     </section>
